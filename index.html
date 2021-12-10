@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleatoriamente</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="#" class="brand">Aleatoriamente</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="#">Contato</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <video class="video-slide active" src="assets/1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="assets/2.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="assets/3.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="assets/4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="assets/5.mp4" autoplay muted loop></video>
+      <div class="content active">
+        <h1>Gabriel<br><span>ALEATORIAMENTE</span><br>Lopes</h1>
+        <p>Nascido no Grajaú, São Paulo, Gabriel Lopes, mais conhecido como Gamer Aleatório, atua como youtuber, streamer e assistente de marketing.
+          Criando conteúdos digitais a mais de 8 anos, Gabriel possui mais de 2 milhões de assinantes somados no Youtube. Sua maior motivação para crescer é levar alegria e risada aos seus fãs.
+          Após ficar muito conhecido por seu canal sobre campeonatos de League of Legends e compilações de lives do brasil e do mundo que hoje conta com mais de 1milhão de assinantes, 
+          Gabriel hoje foca em seu canal pessoal onde aborda diversos temas de forma descontraída e compartilha histórias de sua vida.</p>
+      </div>
+      <div class="content">
+        <h1>Projeto<br><span>Aleatoriamente</span></h1>
+        <p>De forma bem humorada Gabriel reage a diversos tipos de conteúdo enquanto compartilha histórias de sua vida.</p>
+        <a href="https://www.youtube.com/c/Aleatoriamente1/featured" target="_blank">Ver mais</a>
+      </div>
+      <div class="content">
+        <h1>Projeto<br><span>Aleatório Lives</span></h1>
+        <p>Em suas transmissões ao vivo, Gabriel diverte seus fãs enquanto assiste conteúdos diversos e aborta temas inusitados e criativos.</p>
+        <a href="https://www.youtube.com/c/AleatórioLives/featured" target="_blank">Ver mais</a>
+      </div>
+      <div class="content">
+        <h1>Projeto<br><span>Gabriel Lopes</span></h1>
+        <p>Neste canal Gabriel compartilha sua filosofia de vida e responde dúvidas de seus fãs.</p>
+        <a href="https://www.youtube.com/c/GabrielLopes7" target="_blank">Ver mais</a>
+      </div>
+      <div class="content">
+        <h1><span>Parceiros</span></h1>
+        <row>
+          <img src="assets/logos/roxx.png" alt="Roxx" width="200">
+          <img src="assets/logos/nimo.png" alt="NimoTV" width="180">
+          <img src="assets/logos/pubg.png" alt="PUBG" width="200">
+          <img src="assets/logos/redragon.png" alt="Redragon" width="200">
+          <img src="assets/logos/wb.png" alt="WarnerBros" width="150">
+        </row>
+        <p></p>
+        <a href="" target="_blank">Trabalhe Conosco</a>
+      </div>
+      <div class="media-icons">
+        <a href="https://www.facebook.com/Aleatoriamente77777/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/gabrielaleatoriamente/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/gabrielnoiado7" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/aleatoriamente/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+
+    </section>
+
+    <script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+
+  </body>
+</html>
