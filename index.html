@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aleatoriamente</title>
-    <link rel="shortcut icon" type="image/jpg" href="favicon.png"/>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-  </head>
-  <body>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aleatoriamente</title>
+  <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body>
+
+  <main>
     <header>
       <a href="#" class="brand">Aleatoriamente</a>
       <div class="menu-btn"></div>
@@ -28,19 +31,29 @@
       <video class="video-slide" src="assets/5.mp4" autoplay muted loop></video>
       <div class="content active">
         <h1>Gabriel<br><span>ALEATORIAMENTE</span><br>Lopes</h1>
-        <p>Nascido no Grajaú, São Paulo, Gabriel Lopes, mais conhecido como Gamer Aleatório, atua como youtuber, streamer e assistente de marketing.
-          Criando conteúdos digitais a mais de 8 anos, Gabriel possui mais de 2 milhões de assinantes somados no Youtube. Sua maior motivação para crescer é levar alegria e risada aos seus fãs.
-          Após ficar muito conhecido por seu canal sobre campeonatos de League of Legends e compilações de lives do brasil e do mundo que hoje conta com mais de 1milhão de assinantes, 
-          Gabriel hoje foca em seu canal pessoal onde aborda diversos temas de forma descontraída e compartilha histórias de sua vida.</p>
+        <p>Nascido no Grajaú, São Paulo, Gabriel Lopes, mais conhecido como Gamer Aleatório, atua como youtuber,
+          streamer
+          e assistente de marketing.
+          Criando conteúdos digitais a mais de 8 anos, Gabriel possui mais de 2 milhões de assinantes somados no
+          Youtube.
+          Sua maior motivação para crescer é levar alegria e risada aos seus fãs.
+          Após ficar muito conhecido por seu canal sobre campeonatos de League of Legends e compilações de lives do
+          brasil
+          e do mundo que hoje conta com mais de 1milhão de assinantes,
+          Gabriel hoje foca em seu canal pessoal onde aborda diversos temas de forma descontraída e compartilha
+          histórias
+          de sua vida.</p>
       </div>
       <div class="content">
         <h1>Projeto<br><span>Aleatoriamente</span></h1>
-        <p>De forma bem humorada Gabriel reage a diversos tipos de conteúdo enquanto compartilha histórias de sua vida.</p>
+        <p>De forma bem humorada Gabriel reage a diversos tipos de conteúdo enquanto compartilha histórias de sua vida.
+        </p>
         <a href="https://www.youtube.com/c/Aleatoriamente1/featured" target="_blank">Ver mais</a>
       </div>
       <div class="content">
         <h1>Projeto<br><span>Aleatório Lives</span></h1>
-        <p>Em suas transmissões ao vivo, Gabriel diverte seus fãs enquanto assiste conteúdos diversos e aborta temas inusitados e criativos.</p>
+        <p>Em suas transmissões ao vivo, Gabriel diverte seus fãs enquanto assiste conteúdos diversos e aborta temas
+          inusitados e criativos.</p>
         <a href="https://www.youtube.com/c/AleatórioLives/featured" target="_blank">Ver mais</a>
       </div>
       <div class="content">
@@ -77,42 +90,44 @@
     </section>
 
     <script type="text/javascript">
-    const menuBtn = document.querySelector(".menu-btn");
-    const navigation = document.querySelector(".navigation");
+      const menuBtn = document.querySelector(".menu-btn");
+      const navigation = document.querySelector(".navigation");
 
-    menuBtn.addEventListener("click", () => {
-      menuBtn.classList.toggle("active");
-      navigation.classList.toggle("active");
-    });
-
-    const btns = document.querySelectorAll(".nav-btn");
-    const slides = document.querySelectorAll(".video-slide");
-    const contents = document.querySelectorAll(".content");
-
-    var sliderNav = function(manual){
-      btns.forEach((btn) => {
-        btn.classList.remove("active");
+      menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
       });
 
-      slides.forEach((slide) => {
-        slide.classList.remove("active");
-      });
+      const btns = document.querySelectorAll(".nav-btn");
+      const slides = document.querySelectorAll(".video-slide");
+      const contents = document.querySelectorAll(".content");
 
-      contents.forEach((content) => {
-        content.classList.remove("active");
-      });
+      var sliderNav = function (manual) {
+        btns.forEach((btn) => {
+          btn.classList.remove("active");
+        });
 
-      btns[manual].classList.add("active");
-      slides[manual].classList.add("active");
-      contents[manual].classList.add("active");
-    }
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        });
 
-    btns.forEach((btn, i) => {
-      btn.addEventListener("click", () => {
-        sliderNav(i);
+        contents.forEach((content) => {
+          content.classList.remove("active");
+        });
+
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+        contents[manual].classList.add("active");
+      }
+
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          sliderNav(i);
+        });
       });
-    });
     </script>
 
-  </body>
+  </main>
+</body>
+
 </html>
