@@ -176,7 +176,7 @@ section{
 }
 
 .slider-navigation .nav-btn.active{
-  background: #b11a25;
+  background: #000000;
 }
 
 .slider-navigation .nav-btn:not(:last-child){
