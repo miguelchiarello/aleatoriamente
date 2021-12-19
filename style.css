@@ -68,8 +68,9 @@ section{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: #ff0030;
+  background: #b11a25;
 }
+
 
 .home:before{
   z-index: 777;
@@ -115,7 +116,7 @@ section{
 .home .content a{
   background: #fff;
   padding: 15px 35px;
-  color: #ff0030;
+  color: #b11a25;
   font-size: 1.1em;
   font-weight: 500;
   text-decoration: none;
@@ -176,7 +177,7 @@ section{
 }
 
 .slider-navigation .nav-btn.active{
-  background: #ff0030;
+  background: #b11a25;
 }
 
 .slider-navigation .nav-btn:not(:last-child){
