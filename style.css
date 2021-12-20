@@ -259,5 +259,14 @@ section{
     height: 200vh;
     object-fit: cover;
   }
+  
+  header .brand {
+    line-height: 1.0;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 
 }
