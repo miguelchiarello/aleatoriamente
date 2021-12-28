@@ -21,6 +21,8 @@ header{
 }
 
 header .brand{
+  overflow-x: hidden;
+  overflow-y: hidden ;
   color: #fff;
   font-size: 1.5em;
   font-weight: 700;
@@ -274,4 +276,5 @@ section{
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
