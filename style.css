@@ -91,6 +91,13 @@ section{
   margin-top: 50px;
   display: none;
 }
+.home .content-show{
+  z-index: 888;
+  color: #fff;
+  width: 70%;
+  margin-top: 50px;
+  display: block; 
+}
 
 .home .content.active{
   display: block;
