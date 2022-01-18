@@ -278,6 +278,11 @@ section{
     text-transform: uppercase;
     text-decoration: none;
 }
+  .content-show{
+    position: relative;
+    bottom: 25px;
+    
+  }
   
 }
 
